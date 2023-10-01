@@ -6,7 +6,7 @@ import './App.css'
 function App() {
     const [itemsArray, setItemsArray] = useState(['Item 1', 'Item 2']);
 
-    const itemsJsx = itemsArray.map(item => <li>{item}</li>);
+    const itemsJsx = itemsArray.map(item => <li key={item}>{item}</li>);
 
     function addItem() {
         setItemsArray(prevItemsArray => {
