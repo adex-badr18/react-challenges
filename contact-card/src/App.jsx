@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
+import Star from './components/Star';
 
 function App() {
   const [contact, setContact] = useState({
@@ -29,7 +30,7 @@ function App() {
             <img src={`/images/${contact.image}`} alt="" className="card--image" />
 
             <div className="card--info">
-                <img src={`/images/${starIcon}`} onClick={toggle} alt="Star icon" className="card--star" />
+                <Star isFilled={contact.isFavorite} toggleFunc={toggle} />
                 <h1 className="card--name">{contact.firstName} {contact.lastName}</h1>
                 <p className="card--phone">{contact.phone}</p>
                 <p className="card--email">{contact.email}</p>
