@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Count from './components/Count';
 
 function App() {
     const [count, setCount] = useState(0);
@@ -20,9 +21,7 @@ function App() {
         <div className='container'>
             <main>
                 <button className="subtract" onClick={subtract}>-</button>
-                <div className="count">
-                    {count}
-                </div>
+                <Count number={count} />
                 <button className="add" onClick={add}>+</button>
             </main>
         </div>
