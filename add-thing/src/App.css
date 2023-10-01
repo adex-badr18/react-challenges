@@ -21,3 +21,13 @@ button:hover {
     background-color: #FFFFFF;
     color: darkcyan;
 }
+
+ul {
+    list-style-type: none;
+    font-size: 1.3rem;
+    color: #FFFFFF;
+}
+
+ul li {
+    padding: .5em;
+}
