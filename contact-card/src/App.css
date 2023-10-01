@@ -1,4 +1,40 @@
 .container {
     max-width: 480px;
     width: 100%;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.card {
+    max-width: 280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2em 1.5em;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid #d4d4d4;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card--image {
+    width: 90%;
+    align-self: center;
+}
+
+.card--star {
+    width: 30px;
+}
+
+h1 {
+    color: rgb(54, 54, 54);
+    margin: .4em 0;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+    color: #8f8f8f;
+    margin-bottom: 6px;
 }
