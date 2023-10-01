@@ -4,14 +4,26 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
+    const [count, setCount] = useState(0);
+
+    function add() {
+        setCount(prevCount => prevCount + 1);
+    }
+
+    function subtract() {
+        setCount(prevCount => {
+            return prevCount > 0 ? prevCount - 1 : 0
+        })
+    }
+
     return (
         <div className='container'>
             <main>
-                <button className="subtract">-</button>
+                <button className="subtract" onClick={subtract}>-</button>
                 <div className="count">
-                    0
+                    {count}
                 </div>
-                <button className="add">+</button>
+                <button className="add" onClick={add}>+</button>
             </main>
         </div>
     )
