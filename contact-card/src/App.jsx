@@ -10,10 +10,10 @@ function App() {
     <div className='container'>
       <main>
         <article className="card">
-            <img src="" alt="" className="card--image" />
+            <img src="/images/user.png" alt="" className="card--image" />
 
             <div className="card--info">
-                <img src="" alt="" className="card--star" />
+                <img src={`/images/star-empty.png`} alt="" className="card--star" />
                 <h2 className="card--name">John Doe</h2>
                 <p className="card--phone">+234(0) 806 484 4004</p>
                 <p className="card--email">itsmyrealname@example.com</p>
