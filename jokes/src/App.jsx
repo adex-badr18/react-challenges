@@ -1,17 +1,10 @@
 import { useState } from 'react';
 import './App.css';
 import jokesData from './jokesData';
+import Joke from './components/Joke';
 
 function App() {
-    const jokesJsx = jokesData.map(joke => {
-        return (
-            <div className="joke--container" key={joke.id}>
-                <h2 className="setup">{joke.setup}</h2>
-                <p className="punchline">{joke.punchline}</p>
-                <hr />
-            </div>
-        )
-    })
+    const jokesJsx = jokesData.map(joke => <Joke key={joke.id} joke={joke} />)
 
     return (
         <div className='container'>
