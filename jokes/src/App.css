@@ -15,3 +15,8 @@
 hr {
     margin-top: 10px;
 }
+
+button {
+    align-self: flex-start;
+    padding: 5px;
+}
